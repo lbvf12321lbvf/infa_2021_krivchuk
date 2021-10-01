@@ -48,15 +48,27 @@ def cloud(x, y, size):
     cloud_circle(x + 30 * size, y - 30 * size, size)
 
 
+def tree_trunk(x,y, a, b):
+    """
+    рисует ствол дерева
+    :param x: x координата центра верха ствола
+    :param y: y координта центра верха ствола
+    :param a: ширина ствола
+    :param b: высота ствола
+    :return:
+    """
+    rect(screen, (0, 0, 0), (x, y, a, b))
+
+
 def tree(x, y, size):
     """
-    рисуется дерево при помощи tree_circle и rect
-    :param x: x координата низа ствола
-    :param y: y координта низа ствола
+    рисуется дерево при помощи tree_circle() и tree_trunk()
+    :param x: x координата центра верха ствола
+    :param y: y координта центра верха ствола
     :param size: коэф размера
     :return: none
     """
-    rect(screen, (0, 0, 0), (x - 10 * size, y, 20 * size, 100 * size))  # tree trunk
+    tree_trunk(x - 10 * size, y, 20 * size, 100 * size)
     tree_circle(x, y - 75 * size, size)
     tree_circle(x + 30 * size, y - 55 * size, size)
     tree_circle(x - 30 * size, y - 55 * size, size)
