@@ -36,7 +36,7 @@ def cloud(x, y, size):
     """
     рисует облако из кругов при помощи tree_circle()
     :param x: x левого нижнего элемента
-    :param y: н левого нижнего элемента
+    :param y: y левого нижнего элемента
     :param size: коэф размера
     :return: none
     """
@@ -87,7 +87,7 @@ def house_roof(x, y, size):
     """
     рисует крышу дому
     :param x: x координата нижнего левого края
-    :param y: н координата нижнего левого края
+    :param y: y координата нижнего левого края
     :param size: коэф размера
     :return: none
     """
@@ -124,7 +124,7 @@ def house(x, y, size):
     """
     рисует дом при помощи house_basement(),house_roof(),house_window()
     :param x:координата x левого верхнего угла
-    :param y:координата н левого верхнего угла
+    :param y:координата y левого верхнего угла
     :param size:коэф размера
     :return:none
     """
